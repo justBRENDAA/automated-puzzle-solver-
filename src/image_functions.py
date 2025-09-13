@@ -18,7 +18,7 @@ def split_image(image, rows, cols):
 
     for row in range(rows):
         for col in range(cols):
-            print(f"Slice: {row, col}")
+            # print(f"Slice: {row, col}")
 
             height_start = row * slice_height
             height_end =  (row + 1) * slice_height if row < rows - 1 else h  
@@ -26,11 +26,8 @@ def split_image(image, rows, cols):
             width_start = col * slice_width
             width_end =  (col + 1) * slice_width if col < cols - 1 else w
 
-            print(f"Height slice values: {height_start} : {height_end}")
-            print(f"Width slice values: {width_start} : {width_end}")
-            print()
+            # print(f"Height slice values: {height_start} : {height_end}")
+            # print(f"Width slice values: {width_start} : {width_end}")
 
             slice = image[height_start:height_end, width_start:width_end]
-            plt.imshow(slice)
-            plt.axis("off")
-            plt.show()
+            
