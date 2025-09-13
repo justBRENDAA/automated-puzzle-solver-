@@ -30,4 +30,7 @@ def split_image(image, rows, cols):
             # print(f"Width slice values: {width_start} : {width_end}")
 
             slice = image[height_start:height_end, width_start:width_end]
+            slices.append(slice)
+
+    return slices
             
